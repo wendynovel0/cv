@@ -1,0 +1,148 @@
+body{
+    background-color: #814ca7aa;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+
+body::-webkit-scrollbar{
+    display:none;
+}
+
+.primero{
+    height:90px;
+    margin:0;
+    padding:0;
+    width:auto;
+    background-color: #4B0082;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre{
+    font-family: Vogue;
+    text-align: center;
+    position: relative;
+    color:#fff;
+    text-shadow:0px 1px 1px #000, 0px 2px 2px #000, 0px 3px 3px #000;
+    font-size:70px;
+    letter-spacing: 8px;
+}
+
+.nombre::after{
+    content: ''; 
+    position: absolute; 
+    left: -20%; 
+    bottom: 0; 
+    width: 800px; 
+    height: 3px; 
+    background-color: #FFD700; 
+    animation: subrayado .9s infinite alternate;
+}
+
+@keyframes subrayado{
+    from {
+        text-decoration-color:#FFDB58;
+        transform: translateY(0);
+    }
+
+    to {
+        text-decoration-color: #FFD700;
+        transform: translateY(3px);
+    }
+}
+
+.info-personal{
+    height:200px;
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img {
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2{
+    font-family: coolvetica;
+    font-size: 20px;
+    color:#FFD700;
+    text-shadow:0 0 3px #FFD700aa, 0 0 6px #000;
+    letter-spacing:3px;
+}
+
+h1{
+    font-family:Vogue;
+    color:#FFD700;
+}
+
+.datos{
+    width:1100px;
+    height:190px;
+}
+
+p{
+    font-family: coolvetica;
+}
+
+.linea{
+    height:10px;
+    background-color: #FFD700;
+    border:none;
+}
+
+.datos-column{
+    width:1100px;
+    column-count:3;
+    column-gap:10px;
+    column-rule:2px solid #FFD700aa;
+    margin:0;
+    padding:0;
+}
+
+.datos2{
+    margin:0;
+    padding:0;
+    text-align:justify;
+}
+
+.fi{
+    color:#4B0082;
+}
+
+.datos3{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:1000px;
+    margin:0 auto;
+}
+
+.idiomas{
+    width:200px;
+    float:left;
+    border-right:2px solid #FFD700aa;
+}
+
+.tecnicas{
+    width:600px;
+    column-count: 2;
+    float:left;
+    border-right:2px solid #FFD700aa;
+}
+
+.extras{
+    margin-right:100px;
+}
